@@ -1,5 +1,8 @@
 import {Container, createTheme, CssBaseline, ThemeProvider} from "@mui/material";
 
+import {RouterProvider} from "react-router-dom";
+import router from "./components/Routes.tsx"
+
 
 function App() {
 
@@ -13,8 +16,8 @@ const darkTheme = createTheme({
 <CssBaseline/>
 
      <Container>
-         <div>DARK MODE
-         </div>
+<RouterProvider router={router}/>
+
      </Container>
 
  </ThemeProvider>
